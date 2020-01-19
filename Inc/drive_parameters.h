@@ -90,15 +90,15 @@
                                                             variance on speed 
                                                             estimates (percentage) */
 /* State observer scaling factors F1 */                    
-#define F1                               16384
+#define F1                               8192
 #define F2                               16384
 
 /* State observer constants */
-#define GAIN1                            -23211
-#define GAIN2                            9995
+#define GAIN1                            -11264
+#define GAIN2                            6782
 /*Only in case PLL is used, PLL gains */
-#define PLL_KP_GAIN                      425
-#define PLL_KI_GAIN                      10
+#define PLL_KP_GAIN                      637
+#define PLL_KI_GAIN                      22
 
 #define OBS_MEAS_ERRORS_BEFORE_FAULTS    3  /*!< Number of consecutive errors   
                                                            on variance test before a speed 
@@ -118,12 +118,12 @@
 #define CORD_VARIANCE_THRESHOLD          4  /*!<Maxiumum accepted 
                                                             variance on speed 
                                                             estimates (percentage) */                                                                                                                
-#define CORD_F1                          16384
+#define CORD_F1                          8192
 #define CORD_F2                          16384
 
 /* State observer constants */
-#define CORD_GAIN1                       -23211
-#define CORD_GAIN2                       9995
+#define CORD_GAIN1                       -11264
+#define CORD_GAIN2                       6782
 
 #define CORD_MEAS_ERRORS_BEFORE_FAULTS   3  /*!< Number of consecutive errors   
                                                            on variance test before a speed 
@@ -134,7 +134,7 @@
 #define CORD_FIFO_DEPTH_01HZ             64  /*!< Depth of the FIFO used  
                                                            to average mechanical speed  
                                                            in dpp format */        
-#define CORD_MAX_ACCEL_DPPP              9  /*!< Maximum instantaneous 
+#define CORD_MAX_ACCEL_DPPP              19  /*!< Maximum instantaneous 
                                                               electrical acceleration (dpp 
                                                               per control period) */
 #define CORD_BEMF_CONSISTENCY_TOL        64  /* Parameter for B-emf 
@@ -156,23 +156,23 @@
 #define HFI_PLL_KP_DEFAULT               0.00060
 #define HFI_PLL_KI_DEFAULT               0.00400
 
-#define HFI_NOTCH_0_COEFF                0.979509
-#define HFI_NOTCH_1_COEFF                -1.952148
-#define HFI_NOTCH_2_COEFF                0.979509
-#define HFI_NOTCH_3_COEFF                1.952148
-#define HFI_NOTCH_4_COEFF                -0.959018
+#define HFI_NOTCH_0_COEFF                0.969619
+#define HFI_NOTCH_1_COEFF                -1.923946
+#define HFI_NOTCH_2_COEFF                0.969619
+#define HFI_NOTCH_3_COEFF                1.923946
+#define HFI_NOTCH_4_COEFF                -0.939237
 
-#define HFI_LP_0_COEFF                   0.002751
-#define HFI_LP_1_COEFF                   0.005502
-#define HFI_LP_2_COEFF                   0.002751
-#define HFI_LP_3_COEFF                   1.846252
-#define HFI_LP_4_COEFF                   -0.857255
+#define HFI_LP_0_COEFF                   0.00597
+#define HFI_LP_1_COEFF                   0.011941
+#define HFI_LP_2_COEFF                   0.00597
+#define HFI_LP_3_COEFF                   1.769837
+#define HFI_LP_4_COEFF                   -0.793719
 
-#define HFI_HP_0_COEFF                   0.959381
-#define HFI_HP_1_COEFF                   -1.918761
-#define HFI_HP_2_COEFF                   0.959381
-#define HFI_HP_3_COEFF                   1.917111
-#define HFI_HP_4_COEFF                   -0.920412
+#define HFI_HP_0_COEFF                   0.939693
+#define HFI_HP_1_COEFF                   -1.879386
+#define HFI_HP_2_COEFF                   0.939693
+#define HFI_HP_3_COEFF                   1.875746
+#define HFI_HP_4_COEFF                   -0.883026
 
 #define HFI_DC_0_COEFF                   0.00146
 #define HFI_DC_1_COEFF                   0.002921
@@ -182,7 +182,7 @@
 
 #define HFI_MINIMUM_SPEED_RPM            402
 #define HFI_SPD_BUFFER_DEPTH_01HZ        64
-#define HFI_LOCKFREQ                     22
+#define HFI_LOCKFREQ                     33
 #define HFI_SCANROTATIONSNO              3
 #define HFI_WAITBEFORESN                 6
 #define HFI_WAITAFTERNS                  4
@@ -205,7 +205,7 @@
 
 /**************************    DRIVE SETTINGS SECTION   **********************/
 /* PWM generation and current reading */
-#define PWM_FREQUENCY                    30000
+#define PWM_FREQUENCY                    20000
  
 #define LOW_SIDE_SIGNALS_ENABLING        ES_GPIO
 #define SW_DEADTIME_NS                   800 /*!< Dead-time to be inserted  
@@ -217,10 +217,10 @@
                                                            number of PWM cycles */     
 /* Gains values for torque and flux control loops */
 #define PID_TORQUE_KP_DEFAULT         2682       
-#define PID_TORQUE_KI_DEFAULT         596
+#define PID_TORQUE_KI_DEFAULT         894
 #define PID_TORQUE_KD_DEFAULT         100
 #define PID_FLUX_KP_DEFAULT           2682
-#define PID_FLUX_KI_DEFAULT           596
+#define PID_FLUX_KI_DEFAULT           894
 #define PID_FLUX_KD_DEFAULT           100
 
 /* Torque/Flux control loop gains dividers*/
@@ -360,9 +360,9 @@
                                                 number of right shifts to be executed */
 /*  Feed-forward parameters */
 #define FEED_FORWARD_CURRENT_REG_ENABLING DISABLE
-#define CONSTANT1_Q                    30627
-#define CONSTANT1_D                    30627
-#define CONSTANT2_QD                   42817
+#define CONSTANT1_Q                    20418
+#define CONSTANT1_D                    20418
+#define CONSTANT2_QD                   28544
 
 /*  Maximum Torque Per Ampere strategy parameters */
 #define IQMAX                          10026

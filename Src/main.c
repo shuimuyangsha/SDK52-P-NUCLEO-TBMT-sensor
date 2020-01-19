@@ -79,6 +79,7 @@ DAC_HandleTypeDef hdac;
 
 TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim2;
+TIM_HandleTypeDef htim6;
 
 UART_HandleTypeDef huart2;
 
@@ -93,6 +94,7 @@ static void MX_ADC1_Init(void);
 static void MX_DAC_Init(void);
 static void MX_TIM1_Init(void);
 static void MX_TIM2_Init(void);
+static void MX_TIM6_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_NVIC_Init(void);
 /* USER CODE BEGIN PFP */
@@ -103,6 +105,7 @@ static void MX_NVIC_Init(void);
 /* USER CODE BEGIN 0 */
 int16_t DebugGetSpeedMotor = 0;
 uint8_t usartBuf[] = { "abcdefg" };
+int LEDIndicationFlag = 1;
 /* USER CODE END 0 */
 
 /**
@@ -138,14 +141,17 @@ int main(void)
   MX_DAC_Init();
   MX_TIM1_Init();
   MX_TIM2_Init();
+  MX_TIM6_Init();
   MX_USART2_UART_Init();
   MX_MotorControl_Init();
 
   /* Initialize interrupts */
   MX_NVIC_Init();
   /* USER CODE BEGIN 2 */
-  //MC_StartMotor1();//不要启动电机
-  //MC_ProgramSpeedRampMotor1(1000 / 6, 1000);
+  HAL_TIM_Base_Start_IT(&htim6);
+
+	//MC_StartMotor1();
+    //MC_ProgramSpeedRampMotor1(1000 / 6, 1000);
 
   //HAL_UART_Transmit(&huart2, &usartBuf, 7, 0xffff);
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, GPIO_PIN_SET);
@@ -160,9 +166,34 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  
+
 	  //HAL_UART_Transmit(&huart2, &usartBuf, 8, 0xffff);
 	  //MC_ProgramSpeedRampMotor1(3000 / 6, 1000);
 	  //MC_StartMotor1();
+
+
+
+	  if (MC_GetSTMStateMotor1() != IDLE) {
+		  if (Flag500ms == 1) {
+			  Flag500ms = 0;
+			  if (LEDIndicationFlag == 0) {
+				  LEDIndicationFlag = 1;
+				  HAL_GPIO_WritePin(LED11_GPIO_Port, LED11_Pin, GPIO_PIN_SET);
+			  }
+			  else {
+				  LEDIndicationFlag = 0;
+				  HAL_GPIO_WritePin(LED11_GPIO_Port, LED11_Pin, GPIO_PIN_RESET);
+			  }
+		  }
+	  }
+	  else {
+
+		  if (LEDIndicationFlag == 1) {
+			  LEDIndicationFlag = 0;
+			  HAL_GPIO_WritePin(LED11_GPIO_Port, LED11_Pin, GPIO_PIN_RESET);
+		  }
+	  }
 
 	  DebugGetSpeedMotor = MC_GetMecSpeedAverageMotor1();
 	  //MC_GetIqdrefMotor1();
@@ -519,6 +550,44 @@ static void MX_TIM2_Init(void)
   /* USER CODE BEGIN TIM2_Init 2 */
 
   /* USER CODE END TIM2_Init 2 */
+
+}
+
+/**
+  * @brief TIM6 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM6_Init(void)
+{
+
+  /* USER CODE BEGIN TIM6_Init 0 */
+
+  /* USER CODE END TIM6_Init 0 */
+
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+
+  /* USER CODE BEGIN TIM6_Init 1 */
+
+  /* USER CODE END TIM6_Init 1 */
+  htim6.Instance = TIM6;
+  htim6.Init.Prescaler = 7200;
+  htim6.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim6.Init.Period = 5000;
+  htim6.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim6) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim6, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM6_Init 2 */
+
+  /* USER CODE END TIM6_Init 2 */
 
 }
 

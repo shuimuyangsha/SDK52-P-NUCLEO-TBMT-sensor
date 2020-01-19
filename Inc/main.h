@@ -133,6 +133,7 @@ void Error_Handler(void);
 #define M1_HALL_H2_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
+extern uint16_t Flag500ms;
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

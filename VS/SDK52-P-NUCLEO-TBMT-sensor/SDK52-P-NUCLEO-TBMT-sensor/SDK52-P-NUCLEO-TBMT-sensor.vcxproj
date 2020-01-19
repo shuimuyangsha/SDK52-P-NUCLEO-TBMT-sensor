@@ -47,7 +47,7 @@
       <AdditionalOptions>-Otime</AdditionalOptions>
       <CLanguageStandard />
       <CPPLanguageStandard />
-      <Optimization>O3</Optimization>
+      <Optimization>O0</Optimization>
     </ClCompile>
     <Link>
       <AdditionalLinkerInputs>;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>

@@ -334,7 +334,7 @@
               <MiscControls/>
               <Define>ARM_MATH_CM4,USE_HAL_DRIVER,STM32F302x8</Define>
               <Undefine/>
-              <IncludePath>../Inc;                     ../Drivers/STM32F3xx_HAL_Driver/Inc;                     ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy;                     ../Drivers/CMSIS/Device/ST/STM32F3xx/Include;                     ../Drivers/CMSIS/Include;                  ../MCSDK_v5.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc;                  ../MCSDK_v5.2.0-Full/MotorControl/MCSDK/MCLib/F3xx/Inc;                  ../MCSDK_v5.2.0-Full/MotorControl/MCSDK/UILibrary/Inc;                  ../MCSDK_v5.2.0-Full/MotorControl/MCSDK/SystemDriveParams</IncludePath>
+              <IncludePath>../Inc;                       ../Drivers/STM32F3xx_HAL_Driver/Inc;                       ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy;                       ../Drivers/CMSIS/Device/ST/STM32F3xx/Include;                       ../Drivers/CMSIS/Include;                    ../MCSDK_v5.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc;                    ../MCSDK_v5.2.0-Full/MotorControl/MCSDK/MCLib/F3xx/Inc;                    ../MCSDK_v5.2.0-Full/MotorControl/MCSDK/UILibrary/Inc;                    ../MCSDK_v5.2.0-Full/MotorControl/MCSDK/SystemDriveParams</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
