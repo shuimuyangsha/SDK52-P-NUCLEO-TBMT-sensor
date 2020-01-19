@@ -1,0 +1,15 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\bin\armstlink.dll" 
+
+"C:\work\software\P-Nucleo-SDK5-TBMT\SDK52-P-NUCLEO-TBMT-sensor\EWARM\SDK52-P-NUCLEO-TBMT-sensor\Exe\SDK52-P-NUCLEO-TBMT-sensor.out" 
+
+--plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\bin\armbat.dll" 
+
+--device_macro "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\debugger\ST\STM32F3xx.dmac" 
+
+--flash_loader "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\flashloader\ST\FlashSTM32F30xx8.board" 
+
+
+
+
