@@ -548,7 +548,7 @@ ARM Macro Assembler    Page 9
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
 erwork --depend=sdk52-p-nucleo-tbmt-sensor\startup_stm32f302x8.d -osdk52-p-nucl
-eo-tbmt-sensor\startup_stm32f302x8.o -IE:\VS_GDB\ARM\TEMP\P-Nucleo-SDK5-TBMT\SD
+eo-tbmt-sensor\startup_stm32f302x8.o -IE:\VS_GDB\ARM\F302\P-Nucleo-SDK5-TBMT\SD
 K52-P-NUCLEO-TBMT-sensor\MDK-ARM\RTE -IG:\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\In
 clude -IG:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F
 3xx\Include --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA

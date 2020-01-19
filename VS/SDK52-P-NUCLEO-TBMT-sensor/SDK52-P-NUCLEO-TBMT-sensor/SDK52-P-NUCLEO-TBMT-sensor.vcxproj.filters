@@ -808,5 +808,14 @@
     <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\P-NUCLEO-IHM001开发套件 F302 FOC电机评估板\P-NUCLEO-IHM001\P-NUCLEO-IHM001\硬件资料\en.nucleo_64pins_sch\MB1136C_schematic_layout\MB1136.pdf">
       <Filter>Resource files</Filter>
     </None>
+    <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\野火STM32\1-F429至尊版\A盘（资料盘）\STM32F429开发指南-HAL库版本_V1.1（正点原子）.pdf">
+      <Filter>Resource files</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\P-NUCLEO-IHM001开发套件 F302 FOC电机评估板\STM32_PMSM_MC_SDK5.0_Training_CHN（STM32 MC SDK5.0 培训）.pdf">
+      <Filter>Resource files</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\P-NUCLEO-IHM001开发套件 F302 FOC电机评估板\STM32电动机控制应用系列讲座ST MC SDK5_x.pdf">
+      <Filter>Resource files</Filter>
+    </None>
   </ItemGroup>
 </Project>

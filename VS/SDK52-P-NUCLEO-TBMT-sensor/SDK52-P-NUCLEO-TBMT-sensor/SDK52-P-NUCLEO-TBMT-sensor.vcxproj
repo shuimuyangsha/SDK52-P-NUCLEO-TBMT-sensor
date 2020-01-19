@@ -309,6 +309,9 @@
     <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\P-NUCLEO-IHM001开发套件 F302 FOC电机评估板\P-NUCLEO-IHM001\P-NUCLEO-IHM001\使用文档\STM32-PMSM-SDK-V4.3中文使用手册（让初学者快速学习FOC4.3电机库内容）.pdf" />
     <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\P-NUCLEO-IHM001开发套件 F302 FOC电机评估板\P-NUCLEO-IHM001\P-NUCLEO-IHM001\使用文档\stm32_pmsm_foc_sdk4.3_getting_started（帮助开发人员开始）.pdf" />
     <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\P-NUCLEO-IHM001开发套件 F302 FOC电机评估板\P-NUCLEO-IHM001\P-NUCLEO-IHM001\硬件资料\en.nucleo_64pins_sch\MB1136C_schematic_layout\MB1136.pdf" />
+    <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\P-NUCLEO-IHM001开发套件 F302 FOC电机评估板\STM32_PMSM_MC_SDK5.0_Training_CHN（STM32 MC SDK5.0 培训）.pdf" />
+    <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\P-NUCLEO-IHM001开发套件 F302 FOC电机评估板\STM32电动机控制应用系列讲座ST MC SDK5_x.pdf" />
+    <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\野火STM32\1-F429至尊版\A盘（资料盘）\STM32F429开发指南-HAL库版本_V1.1（正点原子）.pdf" />
     <None Include="..\..\..\..\SDK52-P-NUCLEO-TBMT-sensor.stmcx" />
     <None Include="mcu.props" />
     <ClInclude Include="$(BSP_ROOT)\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f3xx.h" />

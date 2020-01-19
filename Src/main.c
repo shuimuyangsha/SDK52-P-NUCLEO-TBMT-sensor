@@ -101,15 +101,14 @@ static void MX_NVIC_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+int16_t DebugGetSpeedMotor = 0;
+uint8_t usartBuf[] = { "abcdefg" };
 /* USER CODE END 0 */
 
 /**
   * @brief  The application entry point.
   * @retval int
   */
-int16_t DebugGetSpeedMotor = 0;
-uint8_t usartBuf[] = {"abcdefg"};
 int main(void)
 {
   /* USER CODE BEGIN 1 */
@@ -145,28 +144,28 @@ int main(void)
   /* Initialize interrupts */
   MX_NVIC_Init();
   /* USER CODE BEGIN 2 */
+  //MC_StartMotor1();//不要启动电机
+  //MC_ProgramSpeedRampMotor1(1000 / 6, 1000);
 
+  //HAL_UART_Transmit(&huart2, &usartBuf, 7, 0xffff);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, GPIO_PIN_SET);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-  //MC_StartMotor1();//不要启动电机
-  //MC_ProgramSpeedRampMotor1(1000 / 6, 1000);
 
-  //HAL_UART_Transmit(&huart2, &usartBuf, 7, 0xffff);
   while (1)
   {
     /* USER CODE END WHILE */
 
+    /* USER CODE BEGIN 3 */
 	  //HAL_UART_Transmit(&huart2, &usartBuf, 8, 0xffff);
 	  //MC_ProgramSpeedRampMotor1(3000 / 6, 1000);
 	  //MC_StartMotor1();
 
 	  DebugGetSpeedMotor = MC_GetMecSpeedAverageMotor1();
 	  //MC_GetIqdrefMotor1();
-
-    /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }
@@ -574,6 +573,9 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(LED11_GPIO_Port, LED11_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOC, M1_PWM_EN_U_Pin|M1_PWM_EN_V_Pin|M1_PWM_EN_W_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : Start_Stop_Pin */
@@ -581,6 +583,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(Start_Stop_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : LED11_Pin */
+  GPIO_InitStruct.Pin = LED11_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(LED11_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : M1_PWM_EN_U_Pin M1_PWM_EN_V_Pin M1_PWM_EN_W_Pin */
   GPIO_InitStruct.Pin = M1_PWM_EN_U_Pin|M1_PWM_EN_V_Pin|M1_PWM_EN_W_Pin;

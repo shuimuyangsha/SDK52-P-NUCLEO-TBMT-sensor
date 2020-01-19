@@ -151,7 +151,7 @@
 		<define key="SP_KDDIV" value="16" />
 		<define key="SPD_DIFFERENTIAL_TERM_ENABLING" value="DISABLE" />
 		<define key="DEFAULT_CONTROL_MODE" value="STC_SPEED_MODE" />
-		<define key="DEFAULT_TARGET_SPEED_RPM" value="3000" />
+		<define key="DEFAULT_TARGET_SPEED_RPM" value="0" />
 		<define key="DEFAULT_TORQUE_COMPONENT" value="0" />
 		<define key="DEFAULT_FLUX_COMPONENT" value="0" />
 		<define key="OV_VOLTAGE_PROT_ENABLING" value="ENABLE" />
