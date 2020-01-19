@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{64FA4211-2B0C-4A5A-9545-0FBBA4C8B6BA}</ProjectGuid>
+    <BSP_ID>KEIL:Keil/STM32F3xx_DFP</BSP_ID>
+    <BSP_VERSION>2.1.0</BSP_VERSION>
+    <InPlaceBSPSubdir />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.sysprogs.toolchains.nongnu.armcc</ToolchainID>
+    <ToolchainVersion>5.x//r1</ToolchainVersion>
+    <TargetExt>.elf</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.sysprogs.toolchains.nongnu.armcc</ToolchainID>
+    <ToolchainVersion>5.x//r1</ToolchainVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\Inc;..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc;..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\Legacy;..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include;..\..\..\Drivers\CMSIS\Include;..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc;..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\F3xx\Inc;..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc;..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\SystemDriveParams;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>ARM_MATH_CM4;USE_HAL_DRIVER;STM32F302x8;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>-Otime</AdditionalOptions>
+      <CLanguageStandard />
+      <CPPLanguageStandard />
+      <Optimization>O3</Optimization>
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <AdditionalOptions />
+      <LinkerScript />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\Inc;..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc;..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\Legacy;..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include;..\..\..\Drivers\CMSIS\Include;..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc;..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\F3xx\Inc;..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc;..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\SystemDriveParams;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG=1;RELEASE=1;$$com.sysprogs.bspoptions.primary_memory$$_layout;ARM_MATH_CM4;USE_HAL_DRIVER;STM32F302x8;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CLanguageStandard />
+      <CPPLanguageStandard />
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <AdditionalOptions />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\MDK-ARM\startup_stm32f302x8.s" />
+    <ClCompile Include="..\..\..\Src\main.c" />
+    <ClCompile Include="..\..\..\Src\motorcontrol.c" />
+    <ClCompile Include="..\..\..\Src\mc_api.c" />
+    <ClCompile Include="..\..\..\Src\motor_control_protocol.c" />
+    <ClCompile Include="..\..\..\Src\mc_config.c" />
+    <ClCompile Include="..\..\..\Src\mc_tasks.c" />
+    <ClCompile Include="..\..\..\Src\regular_conversion_manager.c" />
+    <ClCompile Include="..\..\..\Src\stm32f30x_mc_it.c" />
+    <ClCompile Include="..\..\..\Src\mc_parameters.c" />
+    <ClCompile Include="..\..\..\Src\ui_task.c" />
+    <ClCompile Include="..\..\..\Src\user_interface.c" />
+    <ClCompile Include="..\..\..\Src\stm32f3xx_it.c" />
+    <ClCompile Include="..\..\..\Src\stm32f3xx_hal_msp.c" />
+    <ClCompile Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc.c" />
+    <ClCompile Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc_ex.c" />
+    <ClCompile Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal.c" />
+    <ClCompile Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc.c" />
+    <ClCompile Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc_ex.c" />
+    <ClCompile Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_gpio.c" />
+    <ClCompile Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_dma.c" />
+    <ClCompile Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_cortex.c" />
+    <ClCompile Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr.c" />
+    <ClCompile Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr_ex.c" />
+    <ClCompile Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash.c" />
+    <ClCompile Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash_ex.c" />
+    <ClCompile Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c.c" />
+    <ClCompile Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c_ex.c" />
+    <ClCompile Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_exti.c" />
+    <ClCompile Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_dac.c" />
+    <ClCompile Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_dac_ex.c" />
+    <ClCompile Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim.c" />
+    <ClCompile Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim_ex.c" />
+    <ClCompile Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_uart.c" />
+    <ClCompile Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_uart_ex.c" />
+    <ClCompile Include="..\..\..\Src\system_stm32f3xx.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\bus_voltage_sensor.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\circle_limitation.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\digital_output.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\hall_speed_pos_fdbk.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\mc_irq_handler.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\mc_math.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\mc_interface.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\motor_power_measurement.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\ntc_temperature_sensor.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\open_loop.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\pid_regulator.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\pqd_motor_power_measurement.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\pwm_curr_fdbk.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\pwm_common.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\r_divider_bus_voltage_sensor.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\ramp_ext_mngr.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\speed_pos_fdbk.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\speed_torq_ctrl.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\state_machine.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\virtual_speed_sensor.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\F3xx\Src\r3_1_f30x_pwm_curr_fdbk.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\UILibrary\Src\dac_ui.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\UILibrary\Src\dac_common_ui.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\UILibrary\Src\frame_communication_protocol.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\UILibrary\Src\ui_irq_handler.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\UILibrary\Src\usart_frame_communication_protocol.c" />
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f301x8.h" />
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302x8.h" />
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302xc.h" />
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302xe.h" />
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f303x8.h" />
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f303xc.h" />
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f303xe.h" />
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f318xx.h" />
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f328xx.h" />
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f334x8.h" />
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f358xx.h" />
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f373xc.h" />
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f378xx.h" />
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f398xx.h" />
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f3xx.h" />
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\system_stm32f3xx.h" />
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h" />
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Include\cmsis_armclang.h" />
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Include\cmsis_compiler.h" />
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Include\cmsis_gcc.h" />
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Include\cmsis_iccarm.h" />
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Include\cmsis_version.h" />
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Include\core_cm4.h" />
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Include\mpu_armv7.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\Legacy\stm32f3xx_hal_can_legacy.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_adc.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_adc_ex.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_can.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_cec.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_comp.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_comp_ex.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_cortex.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_crc.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_crc_ex.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_dac.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_dac_ex.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_def.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_dma.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_dma_ex.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_exti.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_flash.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_flash_ex.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_gpio.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_gpio_ex.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_hrtim.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_i2c.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_i2c_ex.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_i2s.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_i2s_ex.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_irda.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_irda_ex.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_iwdg.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_nand.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_nor.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_opamp.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_opamp_ex.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_pccard.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_pcd.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_pcd_ex.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_pwr.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_pwr_ex.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_rcc.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_rcc_ex.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_rtc.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_rtc_ex.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_sdadc.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_smartcard.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_smartcard_ex.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_smbus.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_spi.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_spi_ex.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_sram.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_tim.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_tim_ex.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_tsc.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_uart.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_uart_ex.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_usart.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_usart_ex.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_wwdg.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_adc.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_bus.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_comp.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_dac.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_dma.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_exti.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_fmc.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_gpio.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_opamp.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_rcc.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_system.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_tim.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_usart.h" />
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_usb.h" />
+    <ClInclude Include="..\..\..\Inc\drive_parameters.h" />
+    <ClInclude Include="..\..\..\Inc\main.h" />
+    <ClInclude Include="..\..\..\Inc\mc_api.h" />
+    <ClInclude Include="..\..\..\Inc\mc_config.h" />
+    <ClInclude Include="..\..\..\Inc\mc_parameters.h" />
+    <ClInclude Include="..\..\..\Inc\mc_stm_types.h" />
+    <ClInclude Include="..\..\..\Inc\mc_tasks.h" />
+    <ClInclude Include="..\..\..\Inc\motorcontrol.h" />
+    <ClInclude Include="..\..\..\Inc\parameters_conversion.h" />
+    <ClInclude Include="..\..\..\Inc\parameters_conversion_f30x.h" />
+    <ClInclude Include="..\..\..\Inc\pmsm_motor_parameters.h" />
+    <ClInclude Include="..\..\..\Inc\power_stage_parameters.h" />
+    <ClInclude Include="..\..\..\Inc\regular_conversion_manager.h" />
+    <ClInclude Include="..\..\..\Inc\stm32f3xx_hal_conf.h" />
+    <ClInclude Include="..\..\..\Inc\stm32f3xx_it.h" />
+    <ClInclude Include="..\..\..\Inc\ui_task.h" />
+    <ClInclude Include="..\..\..\Inc\user_interface.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\bus_voltage_sensor.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\circle_limitation.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\digital_output.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\feed_forward_ctrl.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\flux_weakening_ctrl.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\hall_speed_pos_fdbk.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\mc_extended_api.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\mc_interface.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\mc_irq_handler.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\mc_math.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\mc_tuning.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\mc_type.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\motor_power_measurement.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\ntc_temperature_sensor.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\open_loop.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\pqd_motor_power_measurement.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\pwm_common.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\pwm_curr_fdbk.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\ramp_ext_mngr.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\revup_ctrl.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\r_divider_bus_voltage_sensor.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\speed_pos_fdbk.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\speed_torq_ctrl.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\state_machine.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\sto_cordic_speed_pos_fdbk.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\sto_pll_speed_pos_fdbk.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\sto_speed_pos_fdbk.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\virtual_bus_voltage_sensor.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\virtual_speed_sensor.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\F3xx\Inc\r3_1_f30x_pwm_curr_fdbk.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\dac_common_ui.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\dac_rctimer_ui.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\dac_ui.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\frame_communication_protocol.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\motor_control_protocol.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\ui_exported_functions.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\ui_irq_handler.h" />
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\usart_frame_communication_protocol.h" />
+    <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\builtins_ia32.h" />
+    <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\gcc_compat.h" />
+    <ClInclude Include="G:\MDK\ARM\ARMCC\include\stddef.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f301x8.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302x8.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302xc.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302xe.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f303x8.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f303xc.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f303xe.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f318xx.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f328xx.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f334x8.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f358xx.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f373xc.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f378xx.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f398xx.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\system_stm32f3xx.h" />
+    <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\P-NUCLEO-IHM001开发套件 F302 FOC电机评估板\P-NUCLEO-IHM001\P-NUCLEO-IHM001\使用文档\STM32-PMSM-SDK-V4.3中文使用手册（让初学者快速学习FOC4.3电机库内容）.pdf" />
+    <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\P-NUCLEO-IHM001开发套件 F302 FOC电机评估板\P-NUCLEO-IHM001\P-NUCLEO-IHM001\使用文档\stm32_pmsm_foc_sdk4.3_getting_started（帮助开发人员开始）.pdf" />
+    <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\P-NUCLEO-IHM001开发套件 F302 FOC电机评估板\P-NUCLEO-IHM001\P-NUCLEO-IHM001\硬件资料\en.nucleo_64pins_sch\MB1136C_schematic_layout\MB1136.pdf" />
+    <None Include="..\..\..\..\SDK52-P-NUCLEO-TBMT-sensor.stmcx" />
+    <None Include="mcu.props" />
+    <ClInclude Include="$(BSP_ROOT)\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f3xx.h" />
+    <None Include="SDK52-P-NUCLEO-TBMT-sensor-Debug.vgdbsettings" />
+    <None Include="SDK52-P-NUCLEO-TBMT-sensor-Release.vgdbsettings" />
+    <None Include="MCU.xml" />
+    <Library Include="..\..\..\MCSDK_v5.2.0\MotorControl\lib\libmc-keil_M4.lib" />
+  </ItemGroup>
+</Project>
