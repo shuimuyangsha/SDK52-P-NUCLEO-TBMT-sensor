@@ -85,6 +85,7 @@
     <ClCompile Include="..\..\..\Src\stm32f30x_mc_it.c" />
     <ClCompile Include="..\..\..\Src\mc_parameters.c" />
     <ClCompile Include="..\..\..\Src\ui_task.c" />
+    <ClCompile Include="..\..\..\Src\usart.c" />
     <ClCompile Include="..\..\..\Src\user_interface.c" />
     <ClCompile Include="..\..\..\Src\stm32f3xx_it.c" />
     <ClCompile Include="..\..\..\Src\stm32f3xx_hal_msp.c" />

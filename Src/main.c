@@ -51,6 +51,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "motorcontrol.h"
+#include "usart.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -81,6 +82,7 @@ TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim2;
 TIM_HandleTypeDef htim6;
 
+UART_HandleTypeDef huart1;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
@@ -95,6 +97,7 @@ static void MX_DAC_Init(void);
 static void MX_TIM1_Init(void);
 static void MX_TIM2_Init(void);
 static void MX_TIM6_Init(void);
+static void MX_USART1_UART_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_NVIC_Init(void);
 /* USER CODE BEGIN PFP */
@@ -104,7 +107,8 @@ static void MX_NVIC_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 int16_t DebugGetSpeedMotor = 0;
-uint8_t usartBuf[] = { "abcdefg" };
+uint8_t usartBuf[] = { "电机正在运行\r\n" };
+
 int LEDIndicationFlag = 1;
 /* USER CODE END 0 */
 
@@ -142,6 +146,7 @@ int main(void)
   MX_TIM1_Init();
   MX_TIM2_Init();
   MX_TIM6_Init();
+  MX_USART1_UART_Init();
   MX_USART2_UART_Init();
   MX_MotorControl_Init();
 
@@ -152,8 +157,8 @@ int main(void)
 
 	//MC_StartMotor1();
     //MC_ProgramSpeedRampMotor1(1000 / 6, 1000);
-
-  //HAL_UART_Transmit(&huart2, &usartBuf, 7, 0xffff);
+  printf("hello!\r\n");
+  //HAL_UART_Transmit(&huart1, &usartBuf, strlen(&usartBuf), 0xffff);
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, GPIO_PIN_SET);
   /* USER CODE END 2 */
 
@@ -167,7 +172,7 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  
-
+	/*  HAL_UART_Transmit(&huart1, &usartBuf, 14, 0xffff);*/
 	  //HAL_UART_Transmit(&huart2, &usartBuf, 8, 0xffff);
 	  //MC_ProgramSpeedRampMotor1(3000 / 6, 1000);
 	  //MC_StartMotor1();
@@ -180,6 +185,9 @@ int main(void)
 			  if (LEDIndicationFlag == 0) {
 				  LEDIndicationFlag = 1;
 				  HAL_GPIO_WritePin(LED11_GPIO_Port, LED11_Pin, GPIO_PIN_SET);
+				  HAL_UART_Transmit(&huart1, &usartBuf, strlen(&usartBuf), 0xffff);
+
+				  printf("当前速度是：%d RPM\r\n", DebugGetSpeedMotor);
 			  }
 			  else {
 				  LEDIndicationFlag = 0;
@@ -188,6 +196,15 @@ int main(void)
 		  }
 	  }
 	  else {
+		  if (Flag500ms == 1) {
+			Flag500ms = 0;
+			HAL_GPIO_WritePin(LED11_GPIO_Port, LED11_Pin, GPIO_PIN_SET);
+			//HAL_UART_Transmit(&huart1, &usartBuf, strlen(&usartBuf), 0xffff);
+			
+			printf("电机停止！\r\n");
+
+		  }
+
 
 		  if (LEDIndicationFlag == 1) {
 			  LEDIndicationFlag = 0;
@@ -195,7 +212,7 @@ int main(void)
 		  }
 	  }
 
-	  DebugGetSpeedMotor = MC_GetMecSpeedAverageMotor1();
+	  DebugGetSpeedMotor = MC_GetMecSpeedAverageMotor1()*6;
 	  //MC_GetIqdrefMotor1();
   }
   /* USER CODE END 3 */
@@ -237,7 +254,8 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_TIM1;
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USART1|RCC_PERIPHCLK_TIM1;
+  PeriphClkInit.Usart1ClockSelection = RCC_USART1CLKSOURCE_PCLK1;
   PeriphClkInit.Tim1ClockSelection = RCC_TIM1CLK_HCLK;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {
@@ -588,6 +606,41 @@ static void MX_TIM6_Init(void)
   /* USER CODE BEGIN TIM6_Init 2 */
 
   /* USER CODE END TIM6_Init 2 */
+
+}
+
+/**
+  * @brief USART1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_USART1_UART_Init(void)
+{
+
+  /* USER CODE BEGIN USART1_Init 0 */
+
+  /* USER CODE END USART1_Init 0 */
+
+  /* USER CODE BEGIN USART1_Init 1 */
+
+  /* USER CODE END USART1_Init 1 */
+  huart1.Instance = USART1;
+  huart1.Init.BaudRate = 115200;
+  huart1.Init.WordLength = UART_WORDLENGTH_8B;
+  huart1.Init.StopBits = UART_STOPBITS_1;
+  huart1.Init.Parity = UART_PARITY_NONE;
+  huart1.Init.Mode = UART_MODE_TX_RX;
+  huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart1.Init.OverSampling = UART_OVERSAMPLING_16;
+  huart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
+  huart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
+  if (HAL_UART_Init(&huart1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN USART1_Init 2 */
+
+  /* USER CODE END USART1_Init 2 */
 
 }
 

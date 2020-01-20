@@ -109,6 +109,10 @@ void Error_Handler(void);
 #define USART2_R_GPIO_Port GPIOA
 #define DBG_DAC_CH1_Pin GPIO_PIN_4
 #define DBG_DAC_CH1_GPIO_Port GPIOA
+#define USATR1_T_Pin GPIO_PIN_4
+#define USATR1_T_GPIO_Port GPIOC
+#define USART1_R_Pin GPIO_PIN_5
+#define USART1_R_GPIO_Port GPIOC
 #define LED11_Pin GPIO_PIN_2
 #define LED11_GPIO_Port GPIOB
 #define M1_HALL_H3_Pin GPIO_PIN_10

@@ -282,6 +282,9 @@
     <ClCompile Include="..\..\..\MDK-ARM\startup_stm32f302x8.s">
       <Filter>Source files\Application\MDK-ARM</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Src\usart.c">
+      <Filter>Source files\Application\User</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\builtins_ia32.h">
