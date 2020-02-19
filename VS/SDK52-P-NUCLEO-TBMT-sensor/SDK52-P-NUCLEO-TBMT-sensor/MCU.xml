@@ -27,7 +27,7 @@
     <AllDependencies>
       <ProjectDependency>
         <RelativePath>..\..\..\MDK-ARM\SDK52-P-NUCLEO-TBMT-sensor.uvprojx</RelativePath>
-        <Timestamp>132235688408520403</Timestamp>
+        <Timestamp>132259665517111198</Timestamp>
       </ProjectDependency>
     </AllDependencies>
     <RootDirectory>
@@ -81,13 +81,15 @@
                 <VirtualFileSnapshot>
                   <RelativePath>..\..\..\Src\stm32f3xx_hal_msp.c</RelativePath>
                 </VirtualFileSnapshot>
+                <VirtualFileSnapshot>
+                  <RelativePath>..\..\..\Src\usart.c</RelativePath>
+                </VirtualFileSnapshot>
+                <VirtualFileSnapshot>
+                  <RelativePath>..\..\..\Src\EXTREME3D\extreme3d.c</RelativePath>
+                </VirtualFileSnapshot>
               </Files>
             </VirtualDirectorySnapshot>
           </Subdirectories>
-          <Files />
-        </VirtualDirectorySnapshot>
-        <VirtualDirectorySnapshot>
-          <Name>::CMSIS</Name>
           <Files />
         </VirtualDirectorySnapshot>
         <VirtualDirectorySnapshot>
@@ -179,89 +181,93 @@
               <Name>MotorControl</Name>
               <Files>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\lib\libmc-keil_M4.lib</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\bus_voltage_sensor.c</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Src\bus_voltage_sensor.c</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\circle_limitation.c</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Src\circle_limitation.c</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\digital_output.c</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Src\digital_output.c</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\hall_speed_pos_fdbk.c</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Src\hall_speed_pos_fdbk.c</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\mc_irq_handler.c</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Src\mc_irq_handler.c</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\mc_math.c</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Src\mc_math.c</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\mc_interface.c</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Src\mc_interface.c</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\motor_power_measurement.c</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Src\motor_power_measurement.c</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\ntc_temperature_sensor.c</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Src\ntc_temperature_sensor.c</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\open_loop.c</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Src\open_loop.c</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\pid_regulator.c</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Src\pid_regulator.c</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\pqd_motor_power_measurement.c</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Src\pqd_motor_power_measurement.c</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\pwm_curr_fdbk.c</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Src\pwm_curr_fdbk.c</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\pwm_common.c</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Src\pwm_common.c</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\r_divider_bus_voltage_sensor.c</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Src\r_divider_bus_voltage_sensor.c</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\ramp_ext_mngr.c</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Src\ramp_ext_mngr.c</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\revup_ctrl.c</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Src\speed_pos_fdbk.c</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\speed_pos_fdbk.c</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Src\speed_torq_ctrl.c</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\speed_torq_ctrl.c</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Src\state_machine.c</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\state_machine.c</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Src\virtual_speed_sensor.c</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\virtual_speed_sensor.c</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\F3xx\Src\r3_1_f30x_pwm_curr_fdbk.c</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\F3xx\Src\r3_1_f30x_pwm_curr_fdbk.c</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Src\dac_ui.c</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\UILibrary\Src\dac_ui.c</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Src\dac_common_ui.c</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\UILibrary\Src\dac_common_ui.c</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Src\frame_communication_protocol.c</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\UILibrary\Src\frame_communication_protocol.c</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Src\ui_irq_handler.c</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\UILibrary\Src\ui_irq_handler.c</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
-                  <RelativePath>..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Src\usart_frame_communication_protocol.c</RelativePath>
+                  <RelativePath>..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\UILibrary\Src\usart_frame_communication_protocol.c</RelativePath>
                 </VirtualFileSnapshot>
               </Files>
             </VirtualDirectorySnapshot>
           </Subdirectories>
+          <Files />
+        </VirtualDirectorySnapshot>
+        <VirtualDirectorySnapshot>
+          <Name>::CMSIS</Name>
           <Files />
         </VirtualDirectorySnapshot>
       </Subdirectories>
@@ -271,15 +277,16 @@
       <ImportedConfiguration>
         <Settings>
           <IncludeDirectories>
-            <string>E:\VS_GDB\ARM\TEMP\P-Nucleo-SDK5-TBMT\SDK52-P-NUCLEO-TBMT-sensor\Inc</string>
-            <string>E:\VS_GDB\ARM\TEMP\P-Nucleo-SDK5-TBMT\SDK52-P-NUCLEO-TBMT-sensor\Drivers\STM32F3xx_HAL_Driver\Inc</string>
-            <string>E:\VS_GDB\ARM\TEMP\P-Nucleo-SDK5-TBMT\SDK52-P-NUCLEO-TBMT-sensor\Drivers\STM32F3xx_HAL_Driver\Inc\Legacy</string>
-            <string>E:\VS_GDB\ARM\TEMP\P-Nucleo-SDK5-TBMT\SDK52-P-NUCLEO-TBMT-sensor\Drivers\CMSIS\Device\ST\STM32F3xx\Include</string>
-            <string>E:\VS_GDB\ARM\TEMP\P-Nucleo-SDK5-TBMT\SDK52-P-NUCLEO-TBMT-sensor\Drivers\CMSIS\Include</string>
-            <string>E:\VS_GDB\ARM\TEMP\P-Nucleo-SDK5-TBMT\SDK52-P-NUCLEO-TBMT-sensor\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc</string>
-            <string>E:\VS_GDB\ARM\TEMP\P-Nucleo-SDK5-TBMT\SDK52-P-NUCLEO-TBMT-sensor\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\F3xx\Inc</string>
-            <string>E:\VS_GDB\ARM\TEMP\P-Nucleo-SDK5-TBMT\SDK52-P-NUCLEO-TBMT-sensor\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc</string>
-            <string>E:\VS_GDB\ARM\TEMP\P-Nucleo-SDK5-TBMT\SDK52-P-NUCLEO-TBMT-sensor\MCSDK_v5.2.0\MotorControl\MCSDK\SystemDriveParams</string>
+            <string>E:\VS_GDB\ARM\F302\P-Nucleo-SDK5-TBMT\SDK52-P-NUCLEO-TBMT-sensor\Inc</string>
+            <string>E:\VS_GDB\ARM\F302\P-Nucleo-SDK5-TBMT\SDK52-P-NUCLEO-TBMT-sensor\Drivers\STM32F3xx_HAL_Driver\Inc</string>
+            <string>E:\VS_GDB\ARM\F302\P-Nucleo-SDK5-TBMT\SDK52-P-NUCLEO-TBMT-sensor\Drivers\STM32F3xx_HAL_Driver\Inc\Legacy</string>
+            <string>E:\VS_GDB\ARM\F302\P-Nucleo-SDK5-TBMT\SDK52-P-NUCLEO-TBMT-sensor\Drivers\CMSIS\Device\ST\STM32F3xx\Include</string>
+            <string>E:\VS_GDB\ARM\F302\P-Nucleo-SDK5-TBMT\SDK52-P-NUCLEO-TBMT-sensor\Drivers\CMSIS\Include</string>
+            <string>E:\VS_GDB\ARM\F302\P-Nucleo-SDK5-TBMT\SDK52-P-NUCLEO-TBMT-sensor\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Inc</string>
+            <string>E:\VS_GDB\ARM\F302\P-Nucleo-SDK5-TBMT\SDK52-P-NUCLEO-TBMT-sensor\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\F3xx\Inc</string>
+            <string>E:\VS_GDB\ARM\F302\P-Nucleo-SDK5-TBMT\SDK52-P-NUCLEO-TBMT-sensor\MCSDK_v5.2.0-Full\MotorControl\MCSDK\UILibrary\Inc</string>
+            <string>E:\VS_GDB\ARM\F302\P-Nucleo-SDK5-TBMT\SDK52-P-NUCLEO-TBMT-sensor\MCSDK_v5.2.0-Full\MotorControl\MCSDK\SystemDriveParams</string>
+            <string>E:\VS_GDB\ARM\F302\P-Nucleo-SDK5-TBMT\SDK52-P-NUCLEO-TBMT-sensor\Src\EXTREME3D</string>
           </IncludeDirectories>
           <PreprocessorMacros>
             <string>$$com.sysprogs.bspoptions.primary_memory$$_layout</string>

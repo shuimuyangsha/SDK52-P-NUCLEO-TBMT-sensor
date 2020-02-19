@@ -276,14 +276,17 @@
     <None Include="MCU.xml">
       <Filter>VisualGDB settings</Filter>
     </None>
-    <Library Include="..\..\..\MCSDK_v5.2.0\MotorControl\lib\libmc-keil_M4.lib">
-      <Filter>Source files\Middlewares\MotorControl</Filter>
-    </Library>
     <ClCompile Include="..\..\..\MDK-ARM\startup_stm32f302x8.s">
       <Filter>Source files\Application\MDK-ARM</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Src\usart.c">
       <Filter>Source files\Application\User</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Src\EXTREME3D\extreme3d.c">
+      <Filter>Source files\Application\User</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\revup_ctrl.c">
+      <Filter>Source files\Middlewares\MotorControl</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -818,6 +821,12 @@
       <Filter>Resource files</Filter>
     </None>
     <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\P-NUCLEO-IHM001开发套件 F302 FOC电机评估板\STM32电动机控制应用系列讲座ST MC SDK5_x.pdf">
+      <Filter>Resource files</Filter>
+    </None>
+    <None Include="..\..\..\MDK-ARM\SDK52-P-NUCLEO-TBMT-sensor.uvprojx">
+      <Filter>Resource files</Filter>
+    </None>
+    <None Include="..\..\..\uC_Probe\SDK52-P-NUCLEO-TBMT-sensor.wspx">
       <Filter>Resource files</Filter>
     </None>
   </ItemGroup>

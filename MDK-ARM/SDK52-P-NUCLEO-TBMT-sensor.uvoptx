@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <ProjectOpt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project_optx.xsd">
 
   <SchemaVersion>1.0</SchemaVersion>
@@ -45,7 +45,7 @@
         <PageWidth>79</PageWidth>
         <PageLength>66</PageLength>
         <TabStop>8</TabStop>
-        <ListingPath />
+        <ListingPath></ListingPath>
       </OPTLEX>
       <ListingPage>
         <CreateCListing>1</CreateCListing>
@@ -101,19 +101,39 @@
         <sRunDeb>0</sRunDeb>
         <sLrtime>0</sLrtime>
         <nTsel>5</nTsel>
-        <sDll />
-        <sDllPa />
-        <sDlgDll />
-        <sDlgPa />
-        <sIfile />
-        <tDll />
-        <tDllPa />
-        <tDlgDll />
-        <tDlgPa />
-        <tIfile />
+        <sDll></sDll>
+        <sDllPa></sDllPa>
+        <sDlgDll></sDlgDll>
+        <sDlgPa></sDlgPa>
+        <sIfile></sIfile>
+        <tDll></tDll>
+        <tDllPa></tDllPa>
+        <tDlgDll></tDlgDll>
+        <tDlgPa></tDlgPa>
+        <tIfile></tIfile>
         <pMon>STLink\ST-LINKIII-KEIL_SWO.dll</pMon>
       </DebugOpt>
       <TargetDriverDllRegistry>
+        <SetRegEntry>
+          <Number>0</Number>
+          <Key>ARMRTXEVENTFLAGS</Key>
+          <Name>-L70 -Z18 -C0 -M0 -T1</Name>
+        </SetRegEntry>
+        <SetRegEntry>
+          <Number>0</Number>
+          <Key>DLGTARM</Key>
+          <Name>(1010=-1,-1,-1,-1,0)(1007=-1,-1,-1,-1,0)(1008=-1,-1,-1,-1,0)(1009=-1,-1,-1,-1,0)(1012=-1,-1,-1,-1,0)</Name>
+        </SetRegEntry>
+        <SetRegEntry>
+          <Number>0</Number>
+          <Key>ARMDBGFLAGS</Key>
+          <Name></Name>
+        </SetRegEntry>
+        <SetRegEntry>
+          <Number>0</Number>
+          <Key>DLGUARM</Key>
+          <Name>(105=-1,-1,-1,-1,0)</Name>
+        </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
           <Key>UL2CM3</Key>
@@ -122,10 +142,10 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>ST-LINKIII-KEIL_SWO</Key>
-          <Name>-U-O142 -O2254 -S0 -C0 -N00("ARM CoreSight SW-DP") -D00(2BA01477) -L00(0) -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO7 -FD20000000 -FC800 -FN1 -FF0STM32F3xx_256 -FS08000000 -FL010000 -FP0($$Device:STM32F302R8$Flash\STM32F3xx_256.FLM)</Name>
+          <Name>-U066CFF515456707067202023 -O2254 -S0 -C0 -A0 -N00("ARM CoreSight SW-DP") -D00(2BA01477) -L00(0) -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO7 -FD20000000 -FC800 -FN1 -FF0STM32F3xx_256.FLM -FS08000000 -FL040000 -FP0($$Device:STM32F302R8Tx$CMSIS\Flash\STM32F3xx_256.FLM)</Name>
         </SetRegEntry>
       </TargetDriverDllRegistry>
-      <Breakpoint />
+      <Breakpoint/>
       <Tracepoint>
         <THDelay>0</THDelay>
       </Tracepoint>
@@ -137,7 +157,7 @@
         <aSer1>0</aSer1>
         <aSer2>0</aSer2>
         <aPa>0</aPa>
-        <viewmode>0</viewmode>
+        <viewmode>1</viewmode>
         <vrSel>0</vrSel>
         <aSym>0</aSym>
         <aTbox>0</aTbox>
@@ -155,11 +175,11 @@
         <newCpu>0</newCpu>
         <uProt>0</uProt>
       </DebugFlag>
-      <LintExecutable />
-      <LintConfigFile />
+      <LintExecutable></LintExecutable>
+      <LintConfigFile></LintConfigFile>
       <bLintAuto>0</bLintAuto>
-      <Lin2Executable />
-      <Lin2ConfigFile />
+      <Lin2Executable></Lin2Executable>
+      <Lin2ConfigFile></Lin2ConfigFile>
       <bLin2Auto>0</bLin2Auto>
     </TargetOption>
   </Target>
@@ -346,6 +366,30 @@
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
+    <File>
+      <GroupNumber>2</GroupNumber>
+      <FileNumber>15</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\Src\usart.c</PathWithFileName>
+      <FilenameWithoutPath>usart.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>2</GroupNumber>
+      <FileNumber>16</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\Src\EXTREME3D\extreme3d.c</PathWithFileName>
+      <FilenameWithoutPath>extreme3d.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
   </Group>
 
   <Group>
@@ -356,9 +400,9 @@
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>3</GroupNumber>
-      <FileNumber>15</FileNumber>
+      <FileNumber>17</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c</PathWithFileName>
@@ -368,7 +412,7 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
-      <FileNumber>16</FileNumber>
+      <FileNumber>18</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -380,7 +424,7 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
-      <FileNumber>17</FileNumber>
+      <FileNumber>19</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -392,7 +436,7 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
-      <FileNumber>18</FileNumber>
+      <FileNumber>20</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -404,7 +448,7 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
-      <FileNumber>19</FileNumber>
+      <FileNumber>21</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -416,7 +460,7 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
-      <FileNumber>20</FileNumber>
+      <FileNumber>22</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -428,7 +472,7 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
-      <FileNumber>21</FileNumber>
+      <FileNumber>23</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -440,7 +484,7 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
-      <FileNumber>22</FileNumber>
+      <FileNumber>24</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -452,7 +496,7 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
-      <FileNumber>23</FileNumber>
+      <FileNumber>25</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -464,7 +508,7 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
-      <FileNumber>24</FileNumber>
+      <FileNumber>26</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -476,7 +520,7 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
-      <FileNumber>25</FileNumber>
+      <FileNumber>27</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -488,7 +532,7 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
-      <FileNumber>26</FileNumber>
+      <FileNumber>28</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -500,7 +544,7 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
-      <FileNumber>27</FileNumber>
+      <FileNumber>29</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -512,7 +556,7 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
-      <FileNumber>28</FileNumber>
+      <FileNumber>30</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -524,7 +568,7 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
-      <FileNumber>29</FileNumber>
+      <FileNumber>31</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -536,7 +580,7 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
-      <FileNumber>30</FileNumber>
+      <FileNumber>32</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -548,7 +592,7 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
-      <FileNumber>31</FileNumber>
+      <FileNumber>33</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -560,7 +604,7 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
-      <FileNumber>32</FileNumber>
+      <FileNumber>34</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -572,7 +616,7 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
-      <FileNumber>33</FileNumber>
+      <FileNumber>35</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -584,7 +628,7 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
-      <FileNumber>34</FileNumber>
+      <FileNumber>36</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -596,7 +640,7 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
-      <FileNumber>35</FileNumber>
+      <FileNumber>37</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -610,13 +654,13 @@
 
   <Group>
     <GroupName>Drivers/CMSIS</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>4</GroupNumber>
-      <FileNumber>36</FileNumber>
+      <FileNumber>38</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -636,37 +680,13 @@
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>5</GroupNumber>
-      <FileNumber>37</FileNumber>
-      <FileType>4</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/lib/libmc-keil_M4.lib</PathWithFileName>
-      <FilenameWithoutPath>libmc-keil_M4.lib</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>5</GroupNumber>
-      <FileNumber>38</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c</PathWithFileName>
-      <FilenameWithoutPath>bus_voltage_sensor.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>5</GroupNumber>
       <FileNumber>39</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/MCSDK/MCLib/Any/Src/circle_limitation.c</PathWithFileName>
-      <FilenameWithoutPath>circle_limitation.c</FilenameWithoutPath>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c</PathWithFileName>
+      <FilenameWithoutPath>bus_voltage_sensor.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -677,8 +697,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/MCSDK/MCLib/Any/Src/digital_output.c</PathWithFileName>
-      <FilenameWithoutPath>digital_output.c</FilenameWithoutPath>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/circle_limitation.c</PathWithFileName>
+      <FilenameWithoutPath>circle_limitation.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -689,8 +709,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/MCSDK/MCLib/Any/Src/hall_speed_pos_fdbk.c</PathWithFileName>
-      <FilenameWithoutPath>hall_speed_pos_fdbk.c</FilenameWithoutPath>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/digital_output.c</PathWithFileName>
+      <FilenameWithoutPath>digital_output.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -701,8 +721,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/MCSDK/MCLib/Any/Src/mc_irq_handler.c</PathWithFileName>
-      <FilenameWithoutPath>mc_irq_handler.c</FilenameWithoutPath>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/hall_speed_pos_fdbk.c</PathWithFileName>
+      <FilenameWithoutPath>hall_speed_pos_fdbk.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -713,8 +733,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/MCSDK/MCLib/Any/Src/mc_math.c</PathWithFileName>
-      <FilenameWithoutPath>mc_math.c</FilenameWithoutPath>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/mc_irq_handler.c</PathWithFileName>
+      <FilenameWithoutPath>mc_irq_handler.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -725,8 +745,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/MCSDK/MCLib/Any/Src/mc_interface.c</PathWithFileName>
-      <FilenameWithoutPath>mc_interface.c</FilenameWithoutPath>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/mc_math.c</PathWithFileName>
+      <FilenameWithoutPath>mc_math.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -737,8 +757,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/MCSDK/MCLib/Any/Src/motor_power_measurement.c</PathWithFileName>
-      <FilenameWithoutPath>motor_power_measurement.c</FilenameWithoutPath>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/mc_interface.c</PathWithFileName>
+      <FilenameWithoutPath>mc_interface.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -749,8 +769,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c</PathWithFileName>
-      <FilenameWithoutPath>ntc_temperature_sensor.c</FilenameWithoutPath>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/motor_power_measurement.c</PathWithFileName>
+      <FilenameWithoutPath>motor_power_measurement.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -761,8 +781,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/MCSDK/MCLib/Any/Src/open_loop.c</PathWithFileName>
-      <FilenameWithoutPath>open_loop.c</FilenameWithoutPath>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c</PathWithFileName>
+      <FilenameWithoutPath>ntc_temperature_sensor.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -773,8 +793,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/MCSDK/MCLib/Any/Src/pid_regulator.c</PathWithFileName>
-      <FilenameWithoutPath>pid_regulator.c</FilenameWithoutPath>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/open_loop.c</PathWithFileName>
+      <FilenameWithoutPath>open_loop.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -785,8 +805,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/MCSDK/MCLib/Any/Src/pqd_motor_power_measurement.c</PathWithFileName>
-      <FilenameWithoutPath>pqd_motor_power_measurement.c</FilenameWithoutPath>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/pid_regulator.c</PathWithFileName>
+      <FilenameWithoutPath>pid_regulator.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -797,8 +817,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/MCSDK/MCLib/Any/Src/pwm_curr_fdbk.c</PathWithFileName>
-      <FilenameWithoutPath>pwm_curr_fdbk.c</FilenameWithoutPath>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/pqd_motor_power_measurement.c</PathWithFileName>
+      <FilenameWithoutPath>pqd_motor_power_measurement.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -809,8 +829,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/MCSDK/MCLib/Any/Src/pwm_common.c</PathWithFileName>
-      <FilenameWithoutPath>pwm_common.c</FilenameWithoutPath>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/pwm_curr_fdbk.c</PathWithFileName>
+      <FilenameWithoutPath>pwm_curr_fdbk.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -821,8 +841,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/MCSDK/MCLib/Any/Src/r_divider_bus_voltage_sensor.c</PathWithFileName>
-      <FilenameWithoutPath>r_divider_bus_voltage_sensor.c</FilenameWithoutPath>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/pwm_common.c</PathWithFileName>
+      <FilenameWithoutPath>pwm_common.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -833,8 +853,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/MCSDK/MCLib/Any/Src/ramp_ext_mngr.c</PathWithFileName>
-      <FilenameWithoutPath>ramp_ext_mngr.c</FilenameWithoutPath>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/r_divider_bus_voltage_sensor.c</PathWithFileName>
+      <FilenameWithoutPath>r_divider_bus_voltage_sensor.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -845,8 +865,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c</PathWithFileName>
-      <FilenameWithoutPath>speed_pos_fdbk.c</FilenameWithoutPath>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/ramp_ext_mngr.c</PathWithFileName>
+      <FilenameWithoutPath>ramp_ext_mngr.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -857,8 +877,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c</PathWithFileName>
-      <FilenameWithoutPath>speed_torq_ctrl.c</FilenameWithoutPath>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/revup_ctrl.c</PathWithFileName>
+      <FilenameWithoutPath>revup_ctrl.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -869,8 +889,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/MCSDK/MCLib/Any/Src/state_machine.c</PathWithFileName>
-      <FilenameWithoutPath>state_machine.c</FilenameWithoutPath>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c</PathWithFileName>
+      <FilenameWithoutPath>speed_pos_fdbk.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -881,8 +901,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/MCSDK/MCLib/Any/Src/virtual_speed_sensor.c</PathWithFileName>
-      <FilenameWithoutPath>virtual_speed_sensor.c</FilenameWithoutPath>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c</PathWithFileName>
+      <FilenameWithoutPath>speed_torq_ctrl.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -893,8 +913,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/MCSDK/MCLib/F3xx/Src/r3_1_f30x_pwm_curr_fdbk.c</PathWithFileName>
-      <FilenameWithoutPath>r3_1_f30x_pwm_curr_fdbk.c</FilenameWithoutPath>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/state_machine.c</PathWithFileName>
+      <FilenameWithoutPath>state_machine.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -905,8 +925,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/MCSDK/UILibrary/Src/dac_ui.c</PathWithFileName>
-      <FilenameWithoutPath>dac_ui.c</FilenameWithoutPath>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/virtual_speed_sensor.c</PathWithFileName>
+      <FilenameWithoutPath>virtual_speed_sensor.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -917,8 +937,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/MCSDK/UILibrary/Src/dac_common_ui.c</PathWithFileName>
-      <FilenameWithoutPath>dac_common_ui.c</FilenameWithoutPath>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/MCLib/F3xx/Src/r3_1_f30x_pwm_curr_fdbk.c</PathWithFileName>
+      <FilenameWithoutPath>r3_1_f30x_pwm_curr_fdbk.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -929,8 +949,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/MCSDK/UILibrary/Src/frame_communication_protocol.c</PathWithFileName>
-      <FilenameWithoutPath>frame_communication_protocol.c</FilenameWithoutPath>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/UILibrary/Src/dac_ui.c</PathWithFileName>
+      <FilenameWithoutPath>dac_ui.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -941,8 +961,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/MCSDK/UILibrary/Src/ui_irq_handler.c</PathWithFileName>
-      <FilenameWithoutPath>ui_irq_handler.c</FilenameWithoutPath>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/UILibrary/Src/dac_common_ui.c</PathWithFileName>
+      <FilenameWithoutPath>dac_common_ui.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -953,7 +973,31 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../MCSDK_v5.2.0/MotorControl/MCSDK/UILibrary/Src/usart_frame_communication_protocol.c</PathWithFileName>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/UILibrary/Src/frame_communication_protocol.c</PathWithFileName>
+      <FilenameWithoutPath>frame_communication_protocol.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>5</GroupNumber>
+      <FileNumber>64</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/UILibrary/Src/ui_irq_handler.c</PathWithFileName>
+      <FilenameWithoutPath>ui_irq_handler.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>5</GroupNumber>
+      <FileNumber>65</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>../MCSDK_v5.2.0-Full/MotorControl/MCSDK/UILibrary/Src/usart_frame_communication_protocol.c</PathWithFileName>
       <FilenameWithoutPath>usart_frame_communication_protocol.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>

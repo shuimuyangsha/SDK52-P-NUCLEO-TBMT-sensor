@@ -51,11 +51,12 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "motorcontrol.h"
-#include "usart.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "usart.h"
+#include "string.h"
+#include "extreme3d.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -107,7 +108,7 @@ static void MX_NVIC_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 int16_t DebugGetSpeedMotor = 0;
-uint8_t usartBuf[] = { "电机正在运行\r\n" };
+char usartBuf[] = { "电机正在运行\r\n" };
 
 int LEDIndicationFlag = 1;
 /* USER CODE END 0 */
@@ -154,9 +155,9 @@ int main(void)
   MX_NVIC_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim6);
-
-	//MC_StartMotor1();
-    //MC_ProgramSpeedRampMotor1(1000 / 6, 1000);
+	extreme3dConfig();
+	MC_StartMotor1();
+//  MC_ProgramSpeedRampMotor1(1000 / 6, 1000);
   printf("hello!\r\n");
   //HAL_UART_Transmit(&huart1, &usartBuf, strlen(&usartBuf), 0xffff);
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, GPIO_PIN_SET);
@@ -176,16 +177,15 @@ int main(void)
 	  //HAL_UART_Transmit(&huart2, &usartBuf, 8, 0xffff);
 	  //MC_ProgramSpeedRampMotor1(3000 / 6, 1000);
 	  //MC_StartMotor1();
-
-
-
+		MC_ProgramSpeedRampMotor1((int16_t)(extreme3d.joystickY.getJoystickState-32768)/10/3 , 1000);
+		
 	  if (MC_GetSTMStateMotor1() != IDLE) {
 		  if (Flag500ms == 1) {
 			  Flag500ms = 0;
 			  if (LEDIndicationFlag == 0) {
 				  LEDIndicationFlag = 1;
 				  HAL_GPIO_WritePin(LED11_GPIO_Port, LED11_Pin, GPIO_PIN_SET);
-				  HAL_UART_Transmit(&huart1, &usartBuf, strlen(&usartBuf), 0xffff);
+				  HAL_UART_Transmit(&huart1, (uint8_t *)&usartBuf, (uint16_t) strlen((const char *)&usartBuf), 0xffff);
 
 				  printf("当前速度是：%d RPM\r\n", DebugGetSpeedMotor);
 			  }

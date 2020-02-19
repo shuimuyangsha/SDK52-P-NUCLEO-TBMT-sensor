@@ -42,9 +42,10 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\Inc;..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc;..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\Legacy;..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include;..\..\..\Drivers\CMSIS\Include;..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc;..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\F3xx\Inc;..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc;..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\SystemDriveParams;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\Inc;..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc;..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\Legacy;..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include;..\..\..\Drivers\CMSIS\Include;..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc;..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\F3xx\Inc;..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc;..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\SystemDriveParams;..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Inc;..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\F3xx\Inc;..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\UILibrary\Inc;..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\SystemDriveParams;..\..\..\Src\EXTREME3D;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>ARM_MATH_CM4;USE_HAL_DRIVER;STM32F302x8;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalOptions>-Otime</AdditionalOptions>
+      <AdditionalOptions>
+      </AdditionalOptions>
       <CLanguageStandard />
       <CPPLanguageStandard />
       <Optimization>O0</Optimization>
@@ -53,11 +54,13 @@
       <AdditionalLinkerInputs>;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
       <AdditionalOptions />
       <LinkerScript />
+      <LibrarySearchDirectories>%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\Inc;..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc;..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\Legacy;..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include;..\..\..\Drivers\CMSIS\Include;..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc;..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\F3xx\Inc;..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc;..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\SystemDriveParams;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\Inc;..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc;..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\Legacy;..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include;..\..\..\Drivers\CMSIS\Include;..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc;..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\F3xx\Inc;..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc;..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\SystemDriveParams;..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Inc;..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\F3xx\Inc;..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\UILibrary\Inc;..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\SystemDriveParams;..\..\..\Src\EXTREME3D;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NDEBUG=1;RELEASE=1;$$com.sysprogs.bspoptions.primary_memory$$_layout;ARM_MATH_CM4;USE_HAL_DRIVER;STM32F302x8;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions />
       <CLanguageStandard />
@@ -66,6 +69,8 @@
     <Link>
       <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
       <AdditionalOptions />
+      <LibrarySearchDirectories>%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -314,11 +319,14 @@
     <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\P-NUCLEO-IHM001开发套件 F302 FOC电机评估板\STM32电动机控制应用系列讲座ST MC SDK5_x.pdf" />
     <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\野火STM32\1-F429至尊版\A盘（资料盘）\STM32F429开发指南-HAL库版本_V1.1（正点原子）.pdf" />
     <None Include="..\..\..\..\SDK52-P-NUCLEO-TBMT-sensor.stmcx" />
+    <None Include="..\..\..\MDK-ARM\SDK52-P-NUCLEO-TBMT-sensor.uvprojx" />
+    <None Include="..\..\..\uC_Probe\SDK52-P-NUCLEO-TBMT-sensor.wspx" />
     <None Include="mcu.props" />
     <ClInclude Include="$(BSP_ROOT)\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f3xx.h" />
     <None Include="SDK52-P-NUCLEO-TBMT-sensor-Debug.vgdbsettings" />
     <None Include="SDK52-P-NUCLEO-TBMT-sensor-Release.vgdbsettings" />
     <None Include="MCU.xml" />
-    <Library Include="..\..\..\MCSDK_v5.2.0\MotorControl\lib\libmc-keil_M4.lib" />
+    <ClCompile Include="..\..\..\Src\EXTREME3D\extreme3d.c" />
+    <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\revup_ctrl.c" />
   </ItemGroup>
 </Project>
