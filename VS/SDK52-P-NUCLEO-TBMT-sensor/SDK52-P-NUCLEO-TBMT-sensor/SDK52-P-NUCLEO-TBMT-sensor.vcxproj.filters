@@ -829,5 +829,8 @@
     <None Include="..\..\..\uC_Probe\SDK52-P-NUCLEO-TBMT-sensor.wspx">
       <Filter>Resource files</Filter>
     </None>
+    <None Include="..\..\..\SDK52-P-NUCLEO-TBMT-sensor.ioc">
+      <Filter>Resource files</Filter>
+    </None>
   </ItemGroup>
 </Project>

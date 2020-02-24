@@ -320,6 +320,7 @@
     <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\野火STM32\1-F429至尊版\A盘（资料盘）\STM32F429开发指南-HAL库版本_V1.1（正点原子）.pdf" />
     <None Include="..\..\..\..\SDK52-P-NUCLEO-TBMT-sensor.stmcx" />
     <None Include="..\..\..\MDK-ARM\SDK52-P-NUCLEO-TBMT-sensor.uvprojx" />
+    <None Include="..\..\..\SDK52-P-NUCLEO-TBMT-sensor.ioc" />
     <None Include="..\..\..\uC_Probe\SDK52-P-NUCLEO-TBMT-sensor.wspx" />
     <None Include="mcu.props" />
     <ClInclude Include="$(BSP_ROOT)\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f3xx.h" />

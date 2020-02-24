@@ -77,6 +77,8 @@
 /* Private variables ---------------------------------------------------------*/
 ADC_HandleTypeDef hadc1;
 
+CAN_HandleTypeDef hcan;
+
 DAC_HandleTypeDef hdac;
 
 TIM_HandleTypeDef htim1;
@@ -94,6 +96,7 @@ UART_HandleTypeDef huart2;
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_ADC1_Init(void);
+static void MX_CAN_Init(void);
 static void MX_DAC_Init(void);
 static void MX_TIM1_Init(void);
 static void MX_TIM2_Init(void);
@@ -108,6 +111,15 @@ static void MX_NVIC_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 int16_t DebugGetSpeedMotor = 0;
+int16_t DebugGetMecSpeedRef01Hz = 0;
+int16_t DebugGetTerefMotor1 = 0;
+int16_t DebugGetPhaseCurrentAmplitudeMotor1 = 0;
+int16_t DebugGetPhaseVoltageAmplitudeMotor1 = 0;
+Curr_Components DebugGetIqdMotor1 = {0,0};
+int16_t DebugGetImposedDirectionMotor1 = 0;
+int16_t DebugetSTMStateMotor1 = 0;
+
+
 char usartBuf[] = { "电机正在运行\r\n" };
 
 int LEDIndicationFlag = 1;
@@ -143,6 +155,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_ADC1_Init();
+  MX_CAN_Init();
   MX_DAC_Init();
   MX_TIM1_Init();
   MX_TIM2_Init();
@@ -186,7 +199,7 @@ int main(void)
 				  LEDIndicationFlag = 1;
 				  HAL_GPIO_WritePin(LED11_GPIO_Port, LED11_Pin, GPIO_PIN_SET);
 				  HAL_UART_Transmit(&huart1, (uint8_t *)&usartBuf, (uint16_t) strlen((const char *)&usartBuf), 0xffff);
-
+				  printf("目标速度是：%d RPM\r\n", DebugGetMecSpeedRef01Hz);
 				  printf("当前速度是：%d RPM\r\n", DebugGetSpeedMotor);
 			  }
 			  else {
@@ -212,8 +225,22 @@ int main(void)
 		  }
 	  }
 
+	  if (extreme3d.buttons10.getButtonsState > 0) {
+		  MC_StartMotor1();
+	  }
+	  else if (extreme3d.buttons11.getButtonsState > 0) {
+		  MC_StopMotor1();
+	  }
+
 	  DebugGetSpeedMotor = MC_GetMecSpeedAverageMotor1()*6;
-	  //MC_GetIqdrefMotor1();
+	  DebugGetMecSpeedRef01Hz = MC_GetMecSpeedReferenceMotor1()*6;
+	  DebugGetTerefMotor1 = MC_GetTerefMotor1();
+	  DebugGetIqdMotor1.qI_Component1 = MC_GetIqdMotor1().qI_Component1;
+	  DebugGetIqdMotor1.qI_Component1 = MC_GetIqdrefMotor1().qI_Component2;
+	  DebugGetPhaseCurrentAmplitudeMotor1 = MC_GetPhaseCurrentAmplitudeMotor1();
+	  DebugGetPhaseVoltageAmplitudeMotor1 = MC_GetPhaseVoltageAmplitudeMotor1();
+	  DebugGetImposedDirectionMotor1 = MC_GetImposedDirectionMotor1();
+	  DebugetSTMStateMotor1 = MC_GetSTMStateMotor1();
   }
   /* USER CODE END 3 */
 }
@@ -381,6 +408,43 @@ static void MX_ADC1_Init(void)
   /* USER CODE BEGIN ADC1_Init 2 */
 
   /* USER CODE END ADC1_Init 2 */
+
+}
+
+/**
+  * @brief CAN Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_CAN_Init(void)
+{
+
+  /* USER CODE BEGIN CAN_Init 0 */
+
+  /* USER CODE END CAN_Init 0 */
+
+  /* USER CODE BEGIN CAN_Init 1 */
+
+  /* USER CODE END CAN_Init 1 */
+  hcan.Instance = CAN;
+  hcan.Init.Prescaler = 16;
+  hcan.Init.Mode = CAN_MODE_NORMAL;
+  hcan.Init.SyncJumpWidth = CAN_SJW_1TQ;
+  hcan.Init.TimeSeg1 = CAN_BS1_1TQ;
+  hcan.Init.TimeSeg2 = CAN_BS2_1TQ;
+  hcan.Init.TimeTriggeredMode = DISABLE;
+  hcan.Init.AutoBusOff = DISABLE;
+  hcan.Init.AutoWakeUp = DISABLE;
+  hcan.Init.AutoRetransmission = DISABLE;
+  hcan.Init.ReceiveFifoLocked = DISABLE;
+  hcan.Init.TransmitFifoPriority = DISABLE;
+  if (HAL_CAN_Init(&hcan) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN CAN_Init 2 */
+
+  /* USER CODE END CAN_Init 2 */
 
 }
 
