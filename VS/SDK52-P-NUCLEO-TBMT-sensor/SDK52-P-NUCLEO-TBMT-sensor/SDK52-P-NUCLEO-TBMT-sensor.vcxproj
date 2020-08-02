@@ -294,9 +294,24 @@
     <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\ui_exported_functions.h" />
     <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\ui_irq_handler.h" />
     <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\usart_frame_communication_protocol.h" />
-    <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\builtins_ia32.h" />
-    <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\gcc_compat.h" />
-    <ClInclude Include="G:\MDK\ARM\ARMCC\include\stddef.h" />
+    <ClInclude Include="..\..\..\Src\EXTREME3D\extreme3d.h" />
+    <ClInclude Include="..\..\..\Src\sys.h" />
+    <ClInclude Include="..\..\..\Src\usart.h" />
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f301x8.h" />
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302x8.h" />
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302xc.h" />
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302xe.h" />
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f303x8.h" />
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f303xc.h" />
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f303xe.h" />
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f318xx.h" />
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f328xx.h" />
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f334x8.h" />
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f358xx.h" />
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f373xc.h" />
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f378xx.h" />
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f398xx.h" />
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\system_stm32f3xx.h" />
     <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f301x8.h" />
     <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302x8.h" />
     <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302xc.h" />
@@ -315,9 +330,9 @@
     <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\P-NUCLEO-IHM001开发套件 F302 FOC电机评估板\P-NUCLEO-IHM001\P-NUCLEO-IHM001\使用文档\STM32-PMSM-SDK-V4.3中文使用手册（让初学者快速学习FOC4.3电机库内容）.pdf" />
     <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\P-NUCLEO-IHM001开发套件 F302 FOC电机评估板\P-NUCLEO-IHM001\P-NUCLEO-IHM001\使用文档\stm32_pmsm_foc_sdk4.3_getting_started（帮助开发人员开始）.pdf" />
     <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\P-NUCLEO-IHM001开发套件 F302 FOC电机评估板\P-NUCLEO-IHM001\P-NUCLEO-IHM001\硬件资料\en.nucleo_64pins_sch\MB1136C_schematic_layout\MB1136.pdf" />
-    <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\P-NUCLEO-IHM001开发套件 F302 FOC电机评估板\STM32_PMSM_MC_SDK5.0_Training_CHN（STM32 MC SDK5.0 培训）.pdf" />
-    <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\P-NUCLEO-IHM001开发套件 F302 FOC电机评估板\STM32电动机控制应用系列讲座ST MC SDK5_x.pdf" />
     <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\野火STM32\1-F429至尊版\A盘（资料盘）\STM32F429开发指南-HAL库版本_V1.1（正点原子）.pdf" />
+    <None Include="..\..\..\..\..\..\嵌入式学习\资料\P-NUCLEO-IHM001开发套件 F302 FOC电机评估板\P-NUCLEO-IHM001\P-NUCLEO-IHM001\使用文档\STM32_PMSM_MC_SDK5.0_Training_CHN（STM32 MC SDK5.0 培训）.pdf" />
+    <None Include="..\..\..\..\..\..\嵌入式学习\资料\P-NUCLEO-IHM001开发套件 F302 FOC电机评估板\P-NUCLEO-IHM001\P-NUCLEO-IHM001\使用文档\STM32电动机控制应用系列讲座ST MC SDK5_x.pdf" />
     <None Include="..\..\..\..\SDK52-P-NUCLEO-TBMT-sensor.stmcx" />
     <None Include="..\..\..\MDK-ARM\SDK52-P-NUCLEO-TBMT-sensor.uvprojx" />
     <None Include="..\..\..\SDK52-P-NUCLEO-TBMT-sensor.ioc" />
@@ -329,5 +344,6 @@
     <None Include="MCU.xml" />
     <ClCompile Include="..\..\..\Src\EXTREME3D\extreme3d.c" />
     <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\revup_ctrl.c" />
+    <ClCompile Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_can.c" />
   </ItemGroup>
 </Project>

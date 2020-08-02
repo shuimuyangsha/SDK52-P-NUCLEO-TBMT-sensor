@@ -120,7 +120,7 @@ int16_t DebugGetImposedDirectionMotor1 = 0;
 int16_t DebugetSTMStateMotor1 = 0;
 
 
-char usartBuf[] = { "电机正在运行\r\n" };
+char usartBuf[] = { "鐢垫満姝ｅ湪杩愯\r\n" };
 
 int LEDIndicationFlag = 1;
 /* USER CODE END 0 */
@@ -199,8 +199,8 @@ int main(void)
 				  LEDIndicationFlag = 1;
 				  HAL_GPIO_WritePin(LED11_GPIO_Port, LED11_Pin, GPIO_PIN_SET);
 				  HAL_UART_Transmit(&huart1, (uint8_t *)&usartBuf, (uint16_t) strlen((const char *)&usartBuf), 0xffff);
-				  printf("目标速度是：%d RPM\r\n", DebugGetMecSpeedRef01Hz);
-				  printf("当前速度是：%d RPM\r\n", DebugGetSpeedMotor);
+				  printf("鐩爣閫熷害鏄細%d RPM\r\n", DebugGetMecSpeedRef01Hz);
+				  printf("褰撳墠閫熷害鏄細%d RPM\r\n", DebugGetSpeedMotor);
 			  }
 			  else {
 				  LEDIndicationFlag = 0;
@@ -214,7 +214,7 @@ int main(void)
 			HAL_GPIO_WritePin(LED11_GPIO_Port, LED11_Pin, GPIO_PIN_SET);
 			//HAL_UART_Transmit(&huart1, &usartBuf, strlen(&usartBuf), 0xffff);
 			
-			printf("电机停止！\r\n");
+			printf("鐢垫満鍋滄锛乗r\n");
 
 		  }
 

@@ -288,120 +288,15 @@
     <ClCompile Include="..\..\..\MCSDK_v5.2.0-Full\MotorControl\MCSDK\MCLib\Any\Src\revup_ctrl.c">
       <Filter>Source files\Middlewares\MotorControl</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_can.c">
+      <Filter>Source files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\builtins_ia32.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\bus_voltage_sensor.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\circle_limitation.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\CMSIS\Include\cmsis_armclang.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\CMSIS\Include\cmsis_compiler.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\CMSIS\Include\cmsis_gcc.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\CMSIS\Include\cmsis_iccarm.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\CMSIS\Include\cmsis_version.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\CMSIS\Include\core_cm4.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\dac_common_ui.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\dac_rctimer_ui.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\dac_ui.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\digital_output.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\Inc\drive_parameters.h">
       <Filter>Header files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\feed_forward_ctrl.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\flux_weakening_ctrl.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\frame_communication_protocol.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\gcc_compat.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\hall_speed_pos_fdbk.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Inc\main.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Inc\mc_api.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Inc\mc_config.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\mc_extended_api.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\mc_interface.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\mc_irq_handler.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\mc_math.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Inc\mc_parameters.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\Inc\mc_stm_types.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Inc\mc_tasks.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\mc_tuning.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\mc_type.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\motor_control_protocol.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\motor_power_measurement.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Inc\motorcontrol.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\CMSIS\Include\mpu_armv7.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\ntc_temperature_sensor.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\open_loop.h">
       <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Inc\parameters_conversion.h">
@@ -410,395 +305,548 @@
     <ClInclude Include="..\..\..\Inc\parameters_conversion_f30x.h">
       <Filter>Header files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\Inc\pmsm_motor_parameters.h">
       <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Inc\power_stage_parameters.h">
       <Filter>Header files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\pqd_motor_power_measurement.h">
-      <Filter>Header files</Filter>
+    <ClInclude Include="..\..\..\Src\sys.h">
+      <Filter>Header files\Application\User</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\pwm_common.h">
-      <Filter>Header files</Filter>
+    <ClInclude Include="..\..\..\Src\usart.h">
+      <Filter>Header files\Application\User</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\pwm_curr_fdbk.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\r_divider_bus_voltage_sensor.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\F3xx\Inc\r3_1_f30x_pwm_curr_fdbk.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\ramp_ext_mngr.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Inc\regular_conversion_manager.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\revup_ctrl.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\speed_pos_fdbk.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\speed_torq_ctrl.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\state_machine.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="G:\MDK\ARM\ARMCC\include\stddef.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f3xx.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_adc.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_adc_ex.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_can.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\Legacy\stm32f3xx_hal_can_legacy.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_cec.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_comp.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_comp_ex.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Inc\stm32f3xx_hal_conf.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_cortex.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_crc.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_crc_ex.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_dac.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_dac_ex.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_def.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_dma.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_dma_ex.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_exti.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_flash.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_flash_ex.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_gpio.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_gpio_ex.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_hrtim.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_i2c.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_i2c_ex.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_i2s.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_i2s_ex.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_irda.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_irda_ex.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_iwdg.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_nand.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_nor.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_opamp.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_opamp_ex.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_pccard.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_pcd.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_pcd_ex.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_pwr.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_pwr_ex.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_rcc.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_rcc_ex.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_rtc.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_rtc_ex.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_sdadc.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_smartcard.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_smartcard_ex.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_smbus.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_spi.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_spi_ex.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_sram.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_tim.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_tim_ex.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_tsc.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_uart.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_uart_ex.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_usart.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_usart_ex.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_wwdg.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Inc\stm32f3xx_it.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_adc.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_bus.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_comp.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_dac.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_dma.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_exti.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_fmc.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_gpio.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_opamp.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_rcc.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_system.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_tim.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_usart.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_usb.h">
-      <Filter>Header files</Filter>
+    <ClInclude Include="..\..\..\Src\EXTREME3D\extreme3d.h">
+      <Filter>Header files\Application\User</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f301x8.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
     <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f301x8.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\Drivers\CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f301x8.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
     <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302x8.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302x8.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
-    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302xc.h">
-      <Filter>Header files</Filter>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302x8.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302xc.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\Drivers\CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302xc.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302xc.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
     <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302xe.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302xe.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
-    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f303x8.h">
-      <Filter>Header files</Filter>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302xe.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f303x8.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\Drivers\CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f303x8.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f303x8.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
     <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f303xc.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f303xc.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\Drivers\CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f303xc.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
     <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f303xe.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f303xe.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\Drivers\CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f303xe.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f318xx.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
     <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f318xx.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
-    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f328xx.h">
-      <Filter>Header files</Filter>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f318xx.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f328xx.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
-    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f334x8.h">
-      <Filter>Header files</Filter>
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f328xx.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f328xx.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f334x8.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
-    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f358xx.h">
-      <Filter>Header files</Filter>
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f334x8.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f334x8.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f358xx.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
-    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f373xc.h">
-      <Filter>Header files</Filter>
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f358xx.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f358xx.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f373xc.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f378xx.h">
-      <Filter>Header files</Filter>
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f373xc.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f373xc.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
     <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f378xx.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f398xx.h">
-      <Filter>Header files</Filter>
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f378xx.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f378xx.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
     <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f398xx.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\sto_cordic_speed_pos_fdbk.h">
-      <Filter>Header files</Filter>
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f398xx.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\sto_pll_speed_pos_fdbk.h">
-      <Filter>Header files</Filter>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f398xx.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\sto_speed_pos_fdbk.h">
-      <Filter>Header files</Filter>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_adc.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
     </ClInclude>
-    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\system_stm32f3xx.h">
-      <Filter>Header files</Filter>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_adc_ex.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_can.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\Legacy\stm32f3xx_hal_can_legacy.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_cec.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_comp.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_comp_ex.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Inc\stm32f3xx_hal_conf.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_cortex.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_crc.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_crc_ex.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_dac.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_dac_ex.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_def.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_dma.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_dma_ex.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_exti.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_flash.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_flash_ex.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_gpio.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_gpio_ex.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_hrtim.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_i2c.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_i2c_ex.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_i2s.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_i2s_ex.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_irda.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_irda_ex.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_iwdg.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_nand.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_nor.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_opamp.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_opamp_ex.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_pccard.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_pcd.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_pcd_ex.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_pwr.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_pwr_ex.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_rcc.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_rcc_ex.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_rtc.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_rtc_ex.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_sdadc.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_smartcard.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_smartcard_ex.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_smbus.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_spi.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_spi_ex.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_sram.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_tim.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_tim_ex.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_tsc.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_uart.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_uart_ex.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_usart.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_usart_ex.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_wwdg.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_adc.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_bus.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_comp.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_dac.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_dma.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_exti.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_fmc.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_gpio.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_opamp.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_rcc.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_system.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_tim.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_usart.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_usb.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\system_stm32f3xx.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\system_stm32f3xx.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\ui_exported_functions.h">
-      <Filter>Header files</Filter>
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include\system_stm32f3xx.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\ui_irq_handler.h">
-      <Filter>Header files</Filter>
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Include\cmsis_armclang.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Include\cmsis_compiler.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Include\cmsis_gcc.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Include\cmsis_iccarm.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Include\cmsis_version.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Include\core_cm4.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Inc\main.h">
+      <Filter>Header files\Application\User</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Inc\mc_config.h">
+      <Filter>Header files\Application\User</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Inc\mc_api.h">
+      <Filter>Header files\Application\User</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Inc\mc_parameters.h">
+      <Filter>Header files\Application\User</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Inc\mc_tasks.h">
+      <Filter>Header files\Application\User</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\motor_control_protocol.h">
+      <Filter>Header files\Application\User</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Inc\motorcontrol.h">
+      <Filter>Header files\Application\User</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Inc\regular_conversion_manager.h">
+      <Filter>Header files\Application\User</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Inc\stm32f3xx_it.h">
+      <Filter>Header files\Application\User</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Inc\ui_task.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\usart_frame_communication_protocol.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\Application\User</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Inc\user_interface.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\Application\User</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\virtual_bus_voltage_sensor.h">
-      <Filter>Header files</Filter>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\bus_voltage_sensor.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\circle_limitation.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\dac_common_ui.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\dac_ui.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\digital_output.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\frame_communication_protocol.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\hall_speed_pos_fdbk.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\mc_interface.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\mc_irq_handler.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\mc_math.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\motor_power_measurement.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\ntc_temperature_sensor.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\open_loop.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\pid_regulator.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\pqd_motor_power_measurement.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\pwm_common.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\pwm_curr_fdbk.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\r_divider_bus_voltage_sensor.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\F3xx\Inc\r3_1_f30x_pwm_curr_fdbk.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\ramp_ext_mngr.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\revup_ctrl.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\speed_pos_fdbk.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\speed_torq_ctrl.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\state_machine.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\ui_irq_handler.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\usart_frame_communication_protocol.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\virtual_speed_sensor.h">
-      <Filter>Header files</Filter>
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\STM32F3xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h">
+      <Filter>Header files\Drivers\STM32F3xx_HAL_Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f3xx.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Drivers\CMSIS\Include\mpu_armv7.h">
+      <Filter>Header files\Drivers\CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\sto_cordic_speed_pos_fdbk.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\sto_pll_speed_pos_fdbk.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\sto_speed_pos_fdbk.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\ui_exported_functions.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\virtual_bus_voltage_sensor.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\mc_tuning.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\mc_type.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\UILibrary\Inc\dac_rctimer_ui.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\mc_extended_api.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\feed_forward_ctrl.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MCSDK_v5.2.0\MotorControl\MCSDK\MCLib\Any\Inc\flux_weakening_ctrl.h">
+      <Filter>Header files\Middlewares\MotorControl</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -817,12 +865,6 @@
     <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\野火STM32\1-F429至尊版\A盘（资料盘）\STM32F429开发指南-HAL库版本_V1.1（正点原子）.pdf">
       <Filter>Resource files</Filter>
     </None>
-    <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\P-NUCLEO-IHM001开发套件 F302 FOC电机评估板\STM32_PMSM_MC_SDK5.0_Training_CHN（STM32 MC SDK5.0 培训）.pdf">
-      <Filter>Resource files</Filter>
-    </None>
-    <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\P-NUCLEO-IHM001开发套件 F302 FOC电机评估板\STM32电动机控制应用系列讲座ST MC SDK5_x.pdf">
-      <Filter>Resource files</Filter>
-    </None>
     <None Include="..\..\..\MDK-ARM\SDK52-P-NUCLEO-TBMT-sensor.uvprojx">
       <Filter>Resource files</Filter>
     </None>
@@ -830,6 +872,12 @@
       <Filter>Resource files</Filter>
     </None>
     <None Include="..\..\..\SDK52-P-NUCLEO-TBMT-sensor.ioc">
+      <Filter>Resource files</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\嵌入式学习\资料\P-NUCLEO-IHM001开发套件 F302 FOC电机评估板\P-NUCLEO-IHM001\P-NUCLEO-IHM001\使用文档\STM32_PMSM_MC_SDK5.0_Training_CHN（STM32 MC SDK5.0 培训）.pdf">
+      <Filter>Resource files</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\嵌入式学习\资料\P-NUCLEO-IHM001开发套件 F302 FOC电机评估板\P-NUCLEO-IHM001\P-NUCLEO-IHM001\使用文档\STM32电动机控制应用系列讲座ST MC SDK5_x.pdf">
       <Filter>Resource files</Filter>
     </None>
   </ItemGroup>
