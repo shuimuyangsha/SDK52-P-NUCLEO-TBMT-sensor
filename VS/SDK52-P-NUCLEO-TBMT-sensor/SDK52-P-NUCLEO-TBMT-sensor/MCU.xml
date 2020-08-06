@@ -27,7 +27,7 @@
     <AllDependencies>
       <ProjectDependency>
         <RelativePath>..\..\..\MDK-ARM\SDK52-P-NUCLEO-TBMT-sensor.uvprojx</RelativePath>
-        <Timestamp>132398001090630191</Timestamp>
+        <Timestamp>132408088123612065</Timestamp>
       </ProjectDependency>
     </AllDependencies>
     <RootDirectory>
