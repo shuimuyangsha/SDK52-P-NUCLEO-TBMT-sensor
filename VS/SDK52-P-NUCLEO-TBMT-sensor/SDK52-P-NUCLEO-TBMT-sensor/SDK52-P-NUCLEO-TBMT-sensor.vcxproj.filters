@@ -880,5 +880,8 @@
     <None Include="..\..\..\..\..\..\嵌入式学习\资料\P-NUCLEO-IHM001开发套件 F302 FOC电机评估板\P-NUCLEO-IHM001\P-NUCLEO-IHM001\使用文档\STM32电动机控制应用系列讲座ST MC SDK5_x.pdf">
       <Filter>Resource files</Filter>
     </None>
+    <None Include="..\..\..\MCSDK 用到的数据库分析.vsdx">
+      <Filter>Resource files</Filter>
+    </None>
   </ItemGroup>
 </Project>
